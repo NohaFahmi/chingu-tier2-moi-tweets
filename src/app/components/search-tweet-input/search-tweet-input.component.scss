@@ -1,0 +1,17 @@
+.search-tweet-input_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .mat-mdc-form-field {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 240px;
+  }
+  .actions-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+  }
+}

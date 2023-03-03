@@ -1,1 +1,10 @@
-<p>search-tweet-input works!</p>
+<div class="search-tweet-input_container">
+  <mat-form-field>
+    <mat-label>Required</mat-label>
+    <input matInput [formControl]="tweetKeyword">
+  </mat-form-field>
+  <div class="actions-wrapper">
+    <button mat-raised-button (click)="tweetKeyword.reset()" [disabled]="tweetKeyword.invalid">CLEAR</button>
+    <button mat-raised-button color="primary" (click)="onGetTweetsByKeyword()" [disabled]="tweetKeyword.invalid">GET TWEETS</button>
+  </div>
+</div>
